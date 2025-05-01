@@ -10,7 +10,14 @@ namespace Proekt
     {
         public string Name { get; set; }
 
-        int Price = 0;
-        public int AttackBonus { get; set; }
+        public int Price { get; set; } = 0;
+        public int AttackBonus { get; set; } = 0;
+
+        public Weapon(string Name, int Prise, int AttackBonus) 
+        { 
+            this.Name = Name;
+            this.Price = Prise;
+            this.AttackBonus = AttackBonus;
+        }
     }
 }

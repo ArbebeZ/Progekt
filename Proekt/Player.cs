@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,22 +27,8 @@ namespace Proekt
         public int MaxHealth = 100;
         public int Mana = 0;
         public int MaxMana = 100;
-
         public int Gold = 0;
 
-
-        Weapon Weapon = new Weapon();
-        Armor Armor = new Armor();
-
-        public int CalculateAttackPower()
-        {
-            return Strength + Weapon.AttackBonus;
-        }
-
-        public int CalculateDefense()
-        {
-            return Agility + Armor.DefenseBonus;
-        }
 
         //експа
         public void AddExperience(int value)

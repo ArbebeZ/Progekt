@@ -21,8 +21,6 @@ namespace Proekt
             player.RestoreResources();
             showStats();
 
-            player.AddExperience(300);
-
             showStats();
         }
         
@@ -41,7 +39,22 @@ namespace Proekt
             ManaLabel3.Text = "Мана: " + player.Mana + "/" + player.MaxMana;
             ManaBar1.Maximum = player.MaxMana;
             ManaBar1.Value = player.Mana;
-            
+
+            strengthBox.Text = "Сила: " + player.Strength;
+            enduranceBox.Text = "Витривалість: " + player.Endurance;
+            agilityBox.Text = "Спритність: " + player.Agility;
+            intelligenceBox.Text = "Інтелект: " + player.Intelligence;
+            critChanceBox.Text = "Шанс крит. удару: " + player.CriticalChance.ToString("F1") + "%";
+            goldBox.Text = "Золото: " + player.Gold;
+
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Shop shop = new Shop(player);
+            shop.Show();
+        }
+
     }
 }
