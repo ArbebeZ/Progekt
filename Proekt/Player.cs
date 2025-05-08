@@ -29,6 +29,17 @@ namespace Proekt
         public int MaxMana = 100;
         public int Gold = 0;
 
+        public Weapon weapon = null;
+        public Armor armor = null;
+
+        public void setWeapon(Weapon weapon)
+        {
+            this.weapon = weapon;
+        }
+        public void setArmor(Armor armor)
+        {
+            this.armor = armor;
+        }
 
         //експа
         public void AddExperience(int value)
@@ -47,6 +58,17 @@ namespace Proekt
         }
 
         // Урон 
+        public int getDamage()
+        {
+            int damage = Strength;
+
+            if (weapon != null)
+            {
+                damage += weapon.AttackBonus;
+            }
+            return damage;
+        }
+
         public void TakeDamage(int value)
         {
             Health -= value;

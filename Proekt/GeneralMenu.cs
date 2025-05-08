@@ -56,5 +56,12 @@ namespace Proekt
             shop.Show();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            RandomEvent randomEvent = new RandomEvent();
+            randomEvent.RandomEvents(player);
+
+            showStats();
+        }
     }
 }

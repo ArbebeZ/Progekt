@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Proekt
 {
-    internal class Armor
+    public class Armor
     {
         public string Name { get; set; } = "";
-        int Price = 0;
+        public int Price { get; set; } = 0;
         public int DefenseBonus { get; set; } = 0;
+
+        public Armor(string Name, int Prise, int DefenseBonus)
+        {
+            this.Name = Name;
+            this.Price = Prise;
+            this.DefenseBonus = DefenseBonus;
+        }
     }
 }

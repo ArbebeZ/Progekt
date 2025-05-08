@@ -38,12 +38,14 @@
             this.ManaLabel3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.strengthBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.enduranceBox = new System.Windows.Forms.TextBox();
             this.agilityBox = new System.Windows.Forms.TextBox();
             this.intelligenceBox = new System.Windows.Forms.TextBox();
             this.critChanceBox = new System.Windows.Forms.TextBox();
             this.goldBox = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,17 +128,6 @@
             this.strengthBox.Size = new System.Drawing.Size(156, 24);
             this.strengthBox.TabIndex = 10;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proekt.Properties.Resources.image_removebg_preview__17_;
-            this.pictureBox1.Location = new System.Drawing.Point(345, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // enduranceBox
             // 
             this.enduranceBox.Location = new System.Drawing.Point(26, 319);
@@ -182,11 +173,34 @@
             this.goldBox.Size = new System.Drawing.Size(156, 24);
             this.goldBox.TabIndex = 16;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Proekt.Properties.Resources.image_removebg_preview__19_;
+            this.pictureBox2.Location = new System.Drawing.Point(312, 89);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(93, 81);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proekt.Properties.Resources.image_removebg_preview__17_;
+            this.pictureBox1.Location = new System.Drawing.Point(345, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // GeneralMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 432);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.goldBox);
             this.Controls.Add(this.critChanceBox);
             this.Controls.Add(this.intelligenceBox);
@@ -205,6 +219,7 @@
             this.Controls.Add(this.label1);
             this.Name = "GeneralMenu";
             this.Text = "GeneralMenu";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -229,5 +244,6 @@
         private System.Windows.Forms.TextBox intelligenceBox;
         private System.Windows.Forms.TextBox critChanceBox;
         private System.Windows.Forms.TextBox goldBox;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

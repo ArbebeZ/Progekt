@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proekt
 {
-    internal class Weapon
+    public class Weapon
     {
         public string Name { get; set; }
 
